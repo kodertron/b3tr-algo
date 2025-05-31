@@ -153,7 +153,7 @@
                             <b>Make sure you have a TradingView account</b>. if you don't have one, sign up at tradingview.com.
                         </li>
                         <li>
-                            <b>Send us your TradingView username via email once payment has been made</b> (not your email) by replying to this message.                         
+                            <b>Send us your TradingView username (not your email) via email once payment has been made</b>  by replying to this message.                         
                         </li>
                         <li>
                             Once we receive your TradingView username, we'll grant you access within 24 hours.                         
@@ -174,25 +174,25 @@
                 <div class="section-content">
                     @if(isset($plan))
                         <div class="field">
-                            <span class="label">Plan Type:</span>
+                            <span class="label">Plan Type: </span>
                             <span class="value">{{ $plan->name }}</span>
                         </div>
                     @endif
                     @if(isset($plan))
                         <div class="field">
-                            <span class="label">Price:</span>
+                            <span class="label">Price: </span>
                             <span class="value">${{ number_format($plan->price, 2) }}</span>
                         </div>
                     @endif
                     @if(isset($billingCycle))
                         <div class="field">
-                            <span class="label">Billing Cycle:</span>
+                            <span class="label">Billing Cycle: </span>
                             <span class="value">{{ ucfirst($billingCycle) }}</span>
                         </div>
                     @endif
                     @if(isset($plan))
                         <div class="field">
-                            <span class="label">Start Date:</span>
+                            <span class="label">Start Date: </span>
                             <span class="value">{{ \Carbon\Carbon::parse($plan->created_at)->format('F d, Y') }}</span>
                         </div>
                     @endif
