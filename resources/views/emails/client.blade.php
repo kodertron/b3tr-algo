@@ -147,18 +147,34 @@
                         Thank you for subscribing to one of our plans! We're thrilled to have you on board and look forward to supporting your journey.
                         Below are the details of your selected plan. If you have any questions or need assistance, feel free to reply to this email.
                     </p>
-                    <p>We’ll follow up shortly with the next steps.</p>
+                    <p>Next Steps:</p>
+                    <ol>
+                        <li>
+                            <b>Make sure you have a TradingView account</b>. if you don't have one, sign up at tradingview.com.
+                        </li>
+                        <li>
+                            <b>Send us your TradingView username via email once payment has been made</b> (not your email) by replying to this message.                         
+                        </li>
+                        <li>
+                            Once we receive your TradingView username, we'll grant you access within 24 hours.                         
+                        </li>
+                        <li>
+                            After access is granted, go to TradingView -> open any chart -> click on "indicators" -> Go to "invite-only scripts" -> You'll see the indicator there.
+                        </li>
+                    </ol>
                     <p>Best regards, <br/>
                     {{ config('app.name') }} Team</p>
                 </div>
             </div>
+
+
             
             <div class="section">
                 <div class="section-title">Subscription Details</div>
                 <div class="section-content">
                     @if(isset($plan))
                         <div class="field">
-                            <span class="label">Plan Name:</span>
+                            <span class="label">Plan Type:</span>
                             <span class="value">{{ $plan->name }}</span>
                         </div>
                     @endif
